@@ -1,9 +1,25 @@
-# SparePartsInventoryAssistant
+# Spare Parts Inventory Assistant
 
-This program asks the user which spare part they need and checks if it is available in the inventory. The parts list is stored in an array (hydraulic pump, PLC module, servo motor).
+This Week 3 assignment was about creating a simple text-based assistant
+that helps a user check whether a spare part is available in the
+inventory. The program keeps asking the user which part they need until
+a valid part is entered.
 
-* If the user types one of the parts exactly (case-sensitive), the program says it is available and ends.
-* If the part is not found, the program says it is not available and asks again.
-* If the user types a special question ("Do you actually have any parts?" or "Is there anything in stock at all?"), the program shows how many parts are in stock and lists them all.
+The inventory contains three parts:
 
-The program uses branching (if/else), loops (while, foreach), arrays, and string interpolation to practice basic C# skills.
+- hydraulic pump  
+- PLC module  
+- servo motor  
+
+The assistant:
+
+- greets the user,
+- repeatedly asks which part they need,
+- checks if the input matches one of the known parts,
+- prints a positive message if the part exists and then exits,
+- prints a negative message if the part does not exist,
+- handles two special questions by listing all available parts.
+
+The program uses a `while` loop, string comparison, and simple console I/O.  
+
+
